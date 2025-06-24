@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--    <bean class="com.springcore.auto.wired.Address" name="address1">-->
+    <!--        <property name="street" value="16th Street"/>-->
+    <!--        <property name="city" value="Pokhara"/>-->
+    <!--    </bean>-->
+
+
+    <bean class="com.springcore.auto.wired.annotations.Address" name="address">
+        <property name="street" value="15th Street"/>
+        <property name="city" value="Pokhara"/>
+    </bean>
+
+    <bean class="com.springcore.auto.wired.annotations.Employee" name="emp1"  />
+
+    <!--    in byType the name of the bean should not be same but in byName it should be same but it only works when only one bean of that type is present-->
+
+
+
+
+
+
+
+
+
+
+</beans>
